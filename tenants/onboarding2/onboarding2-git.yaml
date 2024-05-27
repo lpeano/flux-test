@@ -1,0 +1,11 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: onboarding2
+  namespace: onboarding2
+spec:
+  interval: 1m0s
+  ref:
+    branch: main
+  url: https://github.com/lpeano/onboarding2.git
